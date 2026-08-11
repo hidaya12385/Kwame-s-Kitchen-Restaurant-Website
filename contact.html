@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwame's Kitchen | Contact</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+<div class="logo">
+  <span class="logo-badge">KK</span>
+  Kwame's Kitchen
+</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Page header ===== -->
+  <header class="page-header">
+    <p class="eyebrow">Reservations</p>
+    <h1>Book a table</h1>
+    <p>We'll confirm by phone within the hour</p>
+  </header>
+
+  <!-- ===== Contact content ===== -->
+  <main class="contact-page">
+
+    <!-- Reservation form -->
+    <form id="reservationForm" novalidate>
+      <div class="form-group">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <span class="error-msg" id="nameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" placeholder="024 XXX XXXX" required>
+        <span class="error-msg" id="phoneError"></span>
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+          <span class="error-msg" id="dateError"></span>
+        </div>
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+          <span class="error-msg" id="timeError"></span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="guests">Party size</label>
+        <select id="guests" name="guests">
+          <option value="2">2 guests</option>
+          <option value="4">4 guests</option>
+          <option value="6">6+ guests</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary form-submit">Confirm Reservation</button>
+      <p class="form-success" id="formSuccess">Thanks! Your reservation request has been noted. We'll call you to confirm.</p>
+    </form>
+
+    <!-- Restaurant info -->
+    <div class="info-card">
+      <h3>Visit us</h3>
+      <div class="info-row"><span>Address</span><span>Tamale, Ghana</span></div>
+      <div class="info-row"><span>Phone</span><span>+233 XX XXX XXXX</span></div>
+      <div class="info-row"><span>Email</span><span>hello@kwameskitchen.gh</span></div>
+
+      <h3 class="info-card-second">Hours</h3>
+      <div class="info-row"><span>Every day</span><span>10:00 – 22:00</span></div>
+    </div>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2026 Kwame's Kitchen. All rights reserved.</p>
+    <p>Tamale, Ghana &nbsp;·&nbsp; +233 XX XXX XXXX &nbsp;·&nbsp; @kwameskitchen</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

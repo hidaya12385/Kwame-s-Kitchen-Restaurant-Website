@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwame's Kitchen | Gallery</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+<div class="logo">
+  <span class="logo-badge">KK</span>
+  Kwame's Kitchen
+</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Page header ===== -->
+  <header class="page-header">
+    <p class="eyebrow">Gallery</p>
+    <h1>A taste of the kitchen</h1>
+    <p>Food, faces, and the space in between</p>
+  </header>
+
+  <!-- ===== Gallery grid ===== -->
+  <main class="gallery-grid" id="galleryGrid">
+    <img src="images/jollof.jpg" alt="Jollof rice plate" class="gallery-img">
+    <img src="images/tilapia.jpg" alt="Grilled tilapia" class="gallery-img">
+    <img src="images/hero1.jpg" alt="Restaurant interior" class="gallery-img">
+    <img src="images/kebab.jpg" alt="Kebabs on the grill" class="gallery-img">
+    <img src="images/banku.jpg" alt="Banku and okro soup" class="gallery-img">
+    <img src="images/chef-cooking.jpg" alt="Chef cooking" class="gallery-img">
+    <img src="images/sobolo.jpg" alt="Sobolo drink" class="gallery-img">
+    <img src="images/dining-table.jpg" alt="Dining table setup" class="gallery-img">
+  </main>
+
+  <!-- ===== Lightbox overlay (hidden until an image is clicked) ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&#10005;</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2026 Kwame's Kitchen. All rights reserved.</p>
+    <p>Tamale, Ghana &nbsp;·&nbsp; +233 XX XXX XXXX &nbsp;·&nbsp; @kwameskitchen</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

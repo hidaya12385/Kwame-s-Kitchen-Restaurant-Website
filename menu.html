@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwame's Kitchen | Menu</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ===== Navbar (same as homepage) ===== -->
+  <nav class="navbar">
+<div class="logo">
+  <span class="logo-badge">KK</span>
+  Kwame's Kitchen
+</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Page header ===== -->
+  <header class="page-header">
+    <p class="eyebrow">Our Menu</p>
+    <h1>Made fresh, every day</h1>
+    <p>Filter by category to find what you're craving</p>
+  </header>
+
+  <!-- ===== Filter buttons ===== -->
+  <div class="filter-row" id="filterButtons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="starters">Starters</button>
+    <button class="filter-btn" data-category="mains">Mains</button>
+    <button class="filter-btn" data-category="grills">Grills</button>
+    <button class="filter-btn" data-category="drinks">Drinks</button>
+  </div>
+
+  <!-- ===== Menu grid — JS fills this in ===== -->
+  <main class="menu-grid" id="menuGrid">
+    <!-- cards get inserted here by script.js -->
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2026 Kwame's Kitchen. All rights reserved.</p>
+    <p>Tamale, Ghana &nbsp;·&nbsp; +233 XX XXX XXXX &nbsp;·&nbsp; @kwameskitchen</p>
+  </footer>
+
+  <script src="menu-data.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

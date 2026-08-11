@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwame's Kitchen | Home</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+<div class="logo">
+  <span class="logo-badge">KK</span>
+  Kwame's Kitchen
+</div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Hero slider ===== -->
+  <section class="hero">
+
+    <!-- Slides -->
+    <div class="slider" id="slider">
+      <div class="slide active" style="background-image: url('images/hero1.jpg');"></div>
+      <div class="slide" style="background-image: url('images/hero2.jpg');"></div>
+      <div class="slide" style="background-image: url('images/hero3.jpg');"></div>
+    </div>
+
+    <!-- Text content sits on top of the slides -->
+   <div class="hero-content">
+    <span class="logo-badge hero-badge">KK</span>
+    <p class="eyebrow">Ghanaian kitchen &amp; grill</p>
+    <h1>Flavor cooked slow, served with pride.</h1>
+      <p class="hero-text">Jollof, waakye, banku and grilled tilapia — made the way it's made at home.</p>
+      <div class="btn-row">
+        <a href="menu.html" class="btn btn-primary">View Menu</a>
+        <a href="contact.html" class="btn btn-ghost">Reserve a Table</a>
+      </div>
+    </div>
+
+    <!-- Prev / Next arrows -->
+    <button class="slider-btn prev" id="prevBtn" aria-label="Previous slide">&#10094;</button>
+    <button class="slider-btn next" id="nextBtn" aria-label="Next slide">&#10095;</button>
+
+    <!-- Dot indicators -->
+    <div class="slider-dots" id="sliderDots">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+    </div>
+
+  </section>
+
+  <!-- ===== Featured dishes ===== -->
+  <section class="featured">
+    <div class="section-head">
+      <p class="eyebrow">From the kitchen</p>
+      <h2>Guest Favorites</h2>
+    </div>
+
+    <div class="dish-grid">
+      <div class="dish-card">
+        <div class="dish-thumb" style="background-image: url('images/jollof.jpg');"></div>
+        <h3>Jollof Rice</h3>
+        <p>Smoky tomato rice, chicken or beef</p>
+        <span class="price-tag">GH₵35</span>
+      </div>
+
+      <div class="dish-card">
+        <div class="dish-thumb" style="background-image: url('images/tilapia.jpg');"></div>
+        <h3>Grilled Tilapia</h3>
+        <p>Whole grilled, pepper sauce</p>
+        <span class="price-tag">GH₵50</span>
+      </div>
+
+      <div class="dish-card">
+        <div class="dish-thumb" style="background-image: url('images/banku.jpg');"></div>
+        <h3>Banku &amp; Okro</h3>
+        <p>With assorted meat or fish</p>
+        <span class="price-tag">GH₵40</span>
+      </div>
+
+      <div class="dish-card">
+        <div class="dish-thumb" style="background-image: url('images/kebab.jpg');"></div>
+        <h3>Kebabs</h3>
+        <p>Spiced beef or chicken skewers</p>
+        <span class="price-tag">GH₵25</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About teaser ===== -->
+  <section class="about-teaser">
+    <div class="imgblock" style="background-image: url('images/about.jpg');"></div>
+    <div class="about-text">
+      <p class="eyebrow">Our story</p>
+      <h2>A kitchen built on family recipes</h2>
+      <p>What started as Sunday cooking for the neighborhood in Tamale grew into a full kitchen — same recipes, same care, just more plates.</p>
+      <a href="about.html" class="btn btn-ghost">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ===== CTA strip ===== -->
+  <section class="cta-strip">
+    <div>
+      <h3>Open daily, 10am – 10pm</h3>
+      <p>Tamale, Northern Region · Walk-ins welcome</p>
+    </div>
+    <a href="contact.html" class="btn btn-ghost">Reserve a Table</a>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2026 Kwame's Kitchen. All rights reserved.</p>
+    <p>Tamale, Ghana &nbsp;·&nbsp; +233 XX XXX XXXX &nbsp;·&nbsp; @kwameskitchen</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

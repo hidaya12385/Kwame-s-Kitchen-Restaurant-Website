@@ -684,3 +684,31 @@ footer p {
   }
 }
 
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #C8451B;
+  color: #F4E9D8;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 150;
+  transition: 0.2s;
+}
+
+#backToTop.show {
+  display: flex;
+}
+
+#backToTop:hover {
+  background: #E0562A;
+  transform: translateY(-3px);
+}
+
